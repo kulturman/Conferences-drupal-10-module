@@ -1,0 +1,17 @@
+{% if conferences %}
+    <ul>
+        {% for conference in conferences %}
+            <li>
+                <h3>{{ conference.name.value }}</h3>
+                <p>
+                    {{ 'From ' | t }}
+                    {{ conference.start_date.value }}
+                    {{ 'To ' | t }}
+                    {{ conference.end_date.value }}
+                </p>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No conferences found.</p>
+{% endif %}

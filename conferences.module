@@ -4,3 +4,15 @@
  * @file
  * Primary module hooks for conferences module.
  */
+
+/**
+ * Implements hook_theme().
+ */
+function conferences_theme($existing, $type, $theme, $path) {
+  return [
+    'conferences_conference_list' => [
+      'variables' => ['conferences' => []],
+      'template' => 'conferences-conference-list',
+    ],
+  ];
+}
