@@ -1,0 +1,5 @@
+entity.conference.add_form:
+  route_name: entity.conference.add_form
+  title: 'Add conference'
+  appears_on:
+    - entity.conference.collection

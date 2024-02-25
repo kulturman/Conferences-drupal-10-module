@@ -1,0 +1,18 @@
+conferences.index:
+  title: Conferences
+  description: Conferences list
+  menu_name: main
+  route_name: conferences.index
+
+conferences.speakers.index:
+  title: Speakers
+  description: Speakers list
+  menu_name: main
+  route_name: conferences.speakers.index
+
+entity.conference.collection:
+  title: 'Conferences list'
+  description: 'List of conferences'
+  parent: system.admin_structure
+  route_name: entity.conference.collection
+  weight: 100

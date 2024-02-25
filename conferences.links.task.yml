@@ -1,0 +1,13 @@
+entity.conference.canonical:
+  route_name: entity.conference.canonical
+  base_route: entity.conference.canonical
+  title: 'View'
+entity.conference.edit_form:
+  route_name: entity.conference.edit_form
+  base_route: entity.conference.canonical
+  title: 'Edit'
+entity.conference.delete_form:
+  route_name: entity.conference.delete_form
+  base_route: entity.conference.canonical
+  title: 'Delete'
+  weight: 10

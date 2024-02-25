@@ -1,0 +1,5 @@
+name: 'conferences'
+type: module
+description: 'Module for conferences, admin creates conferences and users can register and create their profiles and then submit sessions to conferences'
+package: Custom
+core_version_requirement: ^10

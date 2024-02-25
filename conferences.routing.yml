@@ -1,0 +1,24 @@
+conferences.index:
+  path: '/conferences'
+  defaults:
+    _controller: '\Drupal\conferences\Controller\ConferenceController::index'
+    _title: Conferences list
+  requirements:
+    _permission: 'access content'
+
+conferences.speakers.index:
+  path: '/conferences/speakers'
+  defaults:
+    _controller: '\Drupal\conferences\Controller\SpeakerController::index'
+    _title: Our speakers list
+  requirements:
+    _permission: 'access content'
+
+
+conferences.speaker.edit:
+  path: '/conferences/speakers/me'
+  defaults:
+    _form: '\Drupal\conferences\Form\SpeakerForm'
+    _title: 'Create or edit your speaker profile'
+  requirements:
+    _permission: 'access content'
