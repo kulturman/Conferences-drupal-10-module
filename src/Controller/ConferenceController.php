@@ -2,8 +2,6 @@
 namespace Drupal\conferences\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
-use Drupal\Core\Entity\EntityTypeManagerInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class ConferenceController extends ControllerBase {
 
