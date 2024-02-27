@@ -1,6 +1,7 @@
 <?php
 namespace Drupal\conferences\Controller;
 
+use Drupal\conferences\Entity\ConferenceInterface;
 use Drupal\Core\Controller\ControllerBase;
 
 class ConferenceController extends ControllerBase {
@@ -25,6 +26,19 @@ class ConferenceController extends ControllerBase {
         '#type' => 'pager',
       ],
     ];
+  }
+
+  public function show(ConferenceInterface $conference) {
+    return [
+      'conference' => [
+        '#theme' => 'conferences_conference_show',
+        '#conference' => $conference,
+      ],
+    ];
+  }
+
+  public function getShowTitle(ConferenceInterface $conference): string {
+    return $conference->label();
   }
 
 }

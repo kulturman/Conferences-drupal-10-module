@@ -1,0 +1,6 @@
+{% if conference %}
+    <p>
+        {{ 'Event will be held from' | t }} <span>{{ conference.start_date.value }}</span> {{ 'to' | t }} <span>{{ conference.start_date.value }}</span>
+    </p>
+    <p>{{ 'Here are the registered speakers:' }}</p>
+{% endif %}

@@ -14,5 +14,9 @@ function conferences_theme($existing, $type, $theme, $path) {
       'variables' => ['conferences' => []],
       'template' => 'conferences-conference-list',
     ],
+    'conferences_conference_show' => [
+      'variables' => ['conference' => NULL],
+      'template' => 'conferences-conference-show',
+    ],
   ];
 }

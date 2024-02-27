@@ -6,6 +6,14 @@ conferences.index:
   requirements:
     _permission: 'access content'
 
+conferences.show:
+  path: '/conferences/{conference}'
+  defaults:
+    _controller: '\Drupal\conferences\Controller\ConferenceController::show'
+    _title_callback: '\Drupal\conferences\Controller\ConferenceController::getShowTitle'
+  requirements:
+    _permission: 'access content'
+
 conferences.speakers.index:
   path: '/conferences/speakers'
   defaults:
